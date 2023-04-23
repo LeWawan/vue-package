@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue2'
+import vue from '@vitejs/plugin-vue'
 import * as path from 'path'
 import typescript2 from 'rollup-plugin-typescript2';
 import dts from "vite-plugin-dts";
