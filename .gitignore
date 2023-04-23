@@ -9,7 +9,7 @@ lerna-debug.log*
 
 node_modules
 # remnove dist for now...
-# dist
+dist
 dist-ssr
 *.local
 
