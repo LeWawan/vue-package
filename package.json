@@ -1,0 +1,44 @@
+{
+  "name": "vue-package",
+  "version": "2.0.0",
+  "description": "",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/trusty-icons.umd.cjs",
+  "module": "./dist/trusty-icons.js",
+  "exports": {
+    ".": {
+      "import": "./dist/trusty-icons.js",
+      "require": "./dist/trusty-icons.umd.cjs"
+    },
+    "./dist/trusty-icons.css": {
+      "import": "./dist/trusty-icons.css",
+      "require": "./dist/trusty-icons.css"
+    }
+  },
+  "types": "./dist/main.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^2.7"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.26.0",
+    "@vitejs/plugin-vue2": "^2.2.0",
+    "path": "^0.12.7",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "typescript": "^4.9.3",
+    "vite": "^4.2.0",
+    "vite-plugin-dts": "^1.7.1",
+    "vitest": "^0.28.5",
+    "vue-tsc": "^1.2.0"
+  }
+}
